@@ -18,5 +18,6 @@
 | 日付 (JST) | 作成アプリ名 | 使用プログラミング言語 | 採用したトレンド技術要素 |
 | :--- | :--- | :--- | :--- |
 | 20260527 | mcp-toolbox-server | Python | Model Context Protocol (MCP) / JSON-RPC 2.0 over stdio |
+| 20260528 | mlkem-hybrid-vault | Go | ポスト量子暗号 (PQC) / ML-KEM-768 (FIPS 203) + X25519 ハイブリッド鍵交換 |
 
-> **次回の言語選定メモ**: 直近（20260527）の使用言語は **Python**。翌日は Python 以外の言語を選定すること。
+> **次回の言語選定メモ**: 直近（20260528）の使用言語は **Go**。翌日は Go 以外の言語を選定すること。

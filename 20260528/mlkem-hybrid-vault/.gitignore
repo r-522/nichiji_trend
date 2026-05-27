@@ -1,0 +1,6 @@
+# build artifacts
+/mlkem-hybrid-vault
+# generated key material — never commit
+*.pub
+*.key
+*.enc
