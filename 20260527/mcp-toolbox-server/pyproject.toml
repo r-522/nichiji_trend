@@ -1,0 +1,18 @@
+[project]
+name = "mcp-toolbox-server"
+version = "0.1.0"
+description = "A dependency-free Model Context Protocol (MCP) server exposing utility tools over stdio."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+keywords = ["mcp", "model-context-protocol", "ai-agent", "json-rpc", "stdio"]
+
+[project.scripts]
+mcp-toolbox-server = "mcp_toolbox.server:serve"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["mcp_toolbox"]
