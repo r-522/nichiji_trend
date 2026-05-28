@@ -1,0 +1,19 @@
+Example invocation:
+
+  node dist/src/index.js run "inventory the workspace files" --silent --trace examples/trace-inventory.jsonl
+
+Each line of the resulting trace.jsonl is one TraceEvent, in order, e.g.:
+
+  {"ts":..., "agent":"orchestrator", "kind":"plan", "data":{"goal":"inventory the workspace files","subtaskIds":["scan-root","summarize"]}}
+  {"ts":..., "agent":"orchestrator", "kind":"spawn", "data":{"wave":["scan-root"]}}
+  {"ts":..., "agent":"scan-root", "kind":"plan", "data":{"iteration":0,"thought":"list workspace root","tool":"list_dir"}}
+  {"ts":..., "agent":"scan-root", "kind":"tool_call", "data":{"tool":"list_dir","args":{"path":"."}}}
+  {"ts":..., "agent":"scan-root", "kind":"tool_result", "data":{"tool":"list_dir","ok":true,"error":null}}
+  ...
+  {"ts":..., "agent":"orchestrator", "kind":"spawn", "data":{"wave":["summarize"]}}
+  ...
+  {"ts":..., "agent":"orchestrator", "kind":"merge", "data":{"keys":["scan-root","summarize"]}}
+  {"ts":..., "agent":"orchestrator", "kind":"complete", "data":{"status":"completed","subtaskCount":2}}
+
+The point of streaming JSONL is that a UI (e.g. Antigravity 2.0's trace pane,
+or a local "tail | jq" terminal) can render the run incrementally as events arrive.
