@@ -1,0 +1,19 @@
+[package]
+name = "rust-subagent-swarm"
+version = "0.1.0"
+edition = "2021"
+description = "Local-first parallel sub-agent orchestrator (zero external deps)"
+license = "MIT"
+
+[[bin]]
+name = "swarm"
+path = "src/main.rs"
+
+[lib]
+name = "rust_subagent_swarm"
+path = "src/lib.rs"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1

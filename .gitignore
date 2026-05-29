@@ -2,3 +2,8 @@ __pycache__/
 *.pyc
 .venv/
 *.egg-info/
+
+# Rust
+target/
+Cargo.lock
+
