@@ -1,0 +1,17 @@
+[package]
+name = "rrf-hybrid-search"
+version = "0.1.0"
+edition = "2021"
+description = "Hybrid (BM25 + character-trigram cosine) retrieval with Reciprocal Rank Fusion, pure Rust stdlib."
+
+[[bin]]
+name = "rrf-hybrid-search"
+path = "src/main.rs"
+
+[lib]
+name = "rrf_hybrid_search"
+path = "src/lib.rs"
+
+[profile.release]
+opt-level = 3
+lto = "thin"
