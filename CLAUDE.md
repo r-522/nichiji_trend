@@ -19,5 +19,6 @@
 | :--- | :--- | :--- | :--- |
 | 20260527 | mcp-toolbox-server | Python | Model Context Protocol (MCP) / JSON-RPC 2.0 over stdio |
 | 20260528 | mlkem-hybrid-vault | Go | ポスト量子暗号 (PQC) / ML-KEM-768 (FIPS 203) + X25519 ハイブリッド鍵交換 |
+| 20260601 | gguf-inspector | Rust | オンデバイス LLM 推論 / GGUF v3 フォーマット (llama.cpp 互換量子化モデルコンテナ) |
 
-> **次回の言語選定メモ**: 直近（20260528）の使用言語は **Go**。翌日は Go 以外の言語を選定すること。
+> **次回の言語選定メモ**: 直近（20260601）の使用言語は **Rust**。翌日は Rust 以外の言語を選定すること（直近の使用言語: Python / Go / Rust）。

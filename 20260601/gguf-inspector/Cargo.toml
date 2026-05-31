@@ -1,0 +1,19 @@
+[package]
+name = "gguf-inspector"
+version = "0.1.0"
+edition = "2021"
+description = "Zero-dependency Rust CLI for inspecting GGUF v3 model files (on-device LLM trend, May 2026)"
+license = "MIT OR Apache-2.0"
+
+[[bin]]
+name = "gguf-inspector"
+path = "src/main.rs"
+
+[lib]
+name = "gguf_inspector"
+path = "src/lib.rs"
+
+[profile.release]
+lto = true
+codegen-units = 1
+strip = true
