@@ -19,5 +19,6 @@
 | :--- | :--- | :--- | :--- |
 | 20260527 | mcp-toolbox-server | Python | Model Context Protocol (MCP) / JSON-RPC 2.0 over stdio |
 | 20260528 | mlkem-hybrid-vault | Go | ポスト量子暗号 (PQC) / ML-KEM-768 (FIPS 203) + X25519 ハイブリッド鍵交換 |
+| 20260602 | multi-agent-supervisor | TypeScript | Agentic AI / マルチエージェント Supervisor パターン (LangGraph / Mastra / Microsoft Agent Framework 系) |
 
-> **次回の言語選定メモ**: 直近（20260528）の使用言語は **Go**。翌日は Go 以外の言語を選定すること。
+> **次回の言語選定メモ**: 直近（20260602）の使用言語は **TypeScript**。翌日は TypeScript 以外の言語を選定すること。
