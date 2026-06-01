@@ -1,0 +1,25 @@
+{
+  "name": "multi-agent-supervisor",
+  "version": "1.0.0",
+  "description": "Reference implementation of the Supervisor-pattern multi-agent orchestration (Agentic AI, 2026 trend) in TypeScript with no external runtime dependencies.",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "supervisor": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node --enable-source-maps dist/index.js",
+    "dev": "node --enable-source-maps --loader ts-node/esm src/index.ts",
+    "test": "node --enable-source-maps --loader ts-node/esm src/test.ts"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "@types/node": "^20.12.0",
+    "ts-node": "^10.9.2"
+  },
+  "license": "MIT"
+}
