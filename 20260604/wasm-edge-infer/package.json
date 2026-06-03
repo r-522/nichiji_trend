@@ -1,0 +1,24 @@
+{
+  "name": "wasm-edge-infer",
+  "version": "1.0.0",
+  "description": "Portable WebAssembly neural-inference kernel (C -> wasm32) driven by a TypeScript host, in the spirit of WASI-NN edge inference.",
+  "type": "module",
+  "engines": {
+    "node": ">=22.6.0"
+  },
+  "scripts": {
+    "build:wasm": "bash scripts/build-wasm.sh",
+    "start": "node src/index.ts",
+    "demo": "node src/index.ts",
+    "test": "node test/run.ts"
+  },
+  "keywords": [
+    "webassembly",
+    "wasm",
+    "wasi-nn",
+    "edge-ai",
+    "inference",
+    "typescript"
+  ],
+  "license": "MIT"
+}
