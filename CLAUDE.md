@@ -20,5 +20,6 @@
 | 20260527 | mcp-toolbox-server | Python | Model Context Protocol (MCP) / JSON-RPC 2.0 over stdio |
 | 20260528 | mlkem-hybrid-vault | Go | ポスト量子暗号 (PQC) / ML-KEM-768 (FIPS 203) + X25519 ハイブリッド鍵交換 |
 | 20260530 | rust-subagent-swarm | Rust | パラレル・サブエージェント・オーケストレーション / Rust-native AI agent runtime (Antigravity / Rig / AutoAgents 系) |
+| 20260605 | webmcp-task-board | JavaScript | WebMCP (`navigator.modelContext`) / ブラウザネイティブな agentic-web ツール公開標準 (Chrome 149 Origin Trial / W3C WebML CG) |
 
-> **次回の言語選定メモ**: 直近（20260530）の使用言語は **Rust**。翌日は Rust 以外の言語を選定すること。
+> **次回の言語選定メモ**: 直近（20260605）の使用言語は **JavaScript**。翌日は JavaScript 以外の言語を選定すること。（過去使用: Python / Go / Rust / JavaScript）

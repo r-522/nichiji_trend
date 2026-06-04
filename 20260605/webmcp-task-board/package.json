@@ -1,0 +1,15 @@
+{
+  "name": "webmcp-task-board",
+  "version": "1.0.0",
+  "description": "An agent-ready Kanban task board that exposes its actions to AI agents via WebMCP (navigator.modelContext).",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test"
+  },
+  "keywords": ["webmcp", "navigator.modelContext", "agentic-web", "mcp", "ai-agents"],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
+}
