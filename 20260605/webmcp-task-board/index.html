@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WebMCP Task Board — agent-ready Kanban</title>
+  <link rel="stylesheet" href="src/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>🗂️ WebMCP Task Board</h1>
+    <p>
+      An agent-ready Kanban board. The same logic the buttons use is exposed to
+      AI agents via <code>navigator.modelContext</code> (WebMCP).
+    </p>
+  </header>
+
+  <main>
+    <div id="mode-banner">Initializing…</div>
+
+    <form id="add-form" autocomplete="off">
+      <input type="text" name="text" placeholder="New task…" aria-label="Task text" />
+      <select name="priority" aria-label="Priority">
+        <option value="low">low</option>
+        <option value="medium" selected>medium</option>
+        <option value="high">high</option>
+      </select>
+      <button class="primary" type="submit">Add task</button>
+    </form>
+
+    <section class="board" aria-label="Task board">
+      <div class="column" id="col-todo">
+        <h2>To Do <span class="count">0</span></h2>
+        <div class="cards"></div>
+      </div>
+      <div class="column" id="col-doing">
+        <h2>Doing <span class="count">0</span></h2>
+        <div class="cards"></div>
+      </div>
+      <div class="column" id="col-done">
+        <h2>Done <span class="count">0</span></h2>
+        <div class="cards"></div>
+      </div>
+    </section>
+
+    <section class="agent" aria-label="Agent console">
+      <h2>🤖 Agent console</h2>
+      <p class="hint">
+        A tiny rule-based agent that maps plain language to WebMCP tool calls.
+        Try: <em>“add buy milk with high priority”</em>, <em>“move t1 to done”</em>,
+        <em>“search milk”</em>, <em>“list doing”</em>, <em>“stats”</em>.
+      </p>
+      <p class="hint">Tools published to agents:</p>
+      <ul id="tool-list"></ul>
+
+      <form id="agent-form" autocomplete="off">
+        <input type="text" name="cmd" placeholder="Tell the agent what to do…" aria-label="Agent command" />
+        <button class="primary" type="submit">Send</button>
+      </form>
+      <ul id="transcript"></ul>
+    </section>
+  </main>
+
+  <footer>
+    Demo of the <a href="https://developer.chrome.com/docs/ai/webmcp" target="_blank" rel="noopener">WebMCP</a>
+    proposal (Chrome 149 origin trial / W3C WebML CG). Built 2026-06-05 JST.
+  </footer>
+
+  <script type="module" src="src/app.js"></script>
+</body>
+</html>
