@@ -1,0 +1,34 @@
+{
+  "name": "skillsmith",
+  "version": "0.1.0",
+  "description": "Zero-dependency toolkit for the Agent Skills (SKILL.md) open standard: validate, lint, index, and scaffold skills.",
+  "type": "module",
+  "bin": {
+    "skillsmith": "./src/cli.ts"
+  },
+  "scripts": {
+    "skillsmith": "tsx src/cli.ts",
+    "build": "tsc -p tsconfig.json",
+    "test": "node --import tsx --test test/*.test.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "demo": "tsx src/cli.ts validate examples/skills/pdf-extractor && tsx src/cli.ts index examples/skills"
+  },
+  "keywords": [
+    "agent-skills",
+    "skill.md",
+    "mcp",
+    "ai-agents",
+    "validator",
+    "linter",
+    "claude"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@types/node": "^22.19.19",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.0"
+  }
+}
