@@ -1,0 +1,28 @@
+{
+  "name": "skill-forge",
+  "version": "1.0.0",
+  "description": "A self-evolving agent skill memory engine: records task trajectories, compiles successful ones into reusable, confidence-scored skill packages, and retrieves them for future tasks.",
+  "type": "module",
+  "bin": {
+    "skill-forge": "dist/src/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "demo": "npm run build && node dist/src/cli.js demo",
+    "cli": "npm run build && node dist/src/cli.js",
+    "test": "npm run build && node --test \"dist/test/*.test.js\""
+  },
+  "keywords": [
+    "ai-agents",
+    "agent-memory",
+    "agent-skills",
+    "self-evolving",
+    "skill-compilation",
+    "typescript"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^6.0.0",
+    "@types/node": "^22.0.0"
+  }
+}
