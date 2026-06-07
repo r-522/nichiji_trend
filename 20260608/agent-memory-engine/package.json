@@ -1,0 +1,33 @@
+{
+  "name": "agent-memory-engine",
+  "version": "1.0.0",
+  "description": "A dependency-free, layered memory engine for AI agents: working/episodic/semantic memory with a forgetting curve, reinforcement, and a context graph.",
+  "type": "module",
+  "main": "src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "engines": {
+    "node": ">=22.6.0"
+  },
+  "scripts": {
+    "demo": "node src/demo.ts",
+    "test": "node --test",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "ai",
+    "agents",
+    "memory",
+    "context-engineering",
+    "context-graph",
+    "rag",
+    "retrieval",
+    "typescript"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.19.20",
+    "typescript": "^6.0.0"
+  }
+}
