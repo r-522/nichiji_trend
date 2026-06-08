@@ -20,5 +20,6 @@
 | 20260527 | mcp-toolbox-server | Python | Model Context Protocol (MCP) / JSON-RPC 2.0 over stdio |
 | 20260528 | mlkem-hybrid-vault | Go | ポスト量子暗号 (PQC) / ML-KEM-768 (FIPS 203) + X25519 ハイブリッド鍵交換 |
 | 20260530 | rust-subagent-swarm | Rust | パラレル・サブエージェント・オーケストレーション / Rust-native AI agent runtime (Antigravity / Rig / AutoAgents 系) |
+| 20260609 | agentsmd-toolkit | TypeScript | AGENTS.md オープン標準 (Linux Foundation / Agentic AI Foundation) — AIコーディングエージェント向け指示ファイルの検証・モノレポ近接ファイル解決・生成・移行 |
 
-> **次回の言語選定メモ**: 直近（20260530）の使用言語は **Rust**。翌日は Rust 以外の言語を選定すること。
+> **次回の言語選定メモ**: 直近（20260609）の使用言語は **TypeScript**。翌日は TypeScript 以外の言語を選定すること。（過去使用: Python / Go / Rust / TypeScript）
