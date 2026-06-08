@@ -1,0 +1,32 @@
+{
+  "name": "agentsmd-toolkit",
+  "version": "1.0.0",
+  "description": "Zero-dependency TypeScript CLI for the AGENTS.md open standard: validate, resolve (monorepo nearest-file precedence), scaffold and migrate AI coding-agent instruction files.",
+  "type": "module",
+  "bin": {
+    "agentsmd": "./src/cli.ts"
+  },
+  "scripts": {
+    "agentsmd": "node src/cli.ts",
+    "build": "tsc -p tsconfig.json",
+    "test": "node --test --experimental-strip-types",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "engines": {
+    "node": ">=22.6.0"
+  },
+  "keywords": [
+    "agents.md",
+    "ai-agents",
+    "coding-agents",
+    "linter",
+    "cli",
+    "monorepo",
+    "typescript"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.19.20",
+    "typescript": "^6.0.3"
+  }
+}
