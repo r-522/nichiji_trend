@@ -1,0 +1,36 @@
+{
+  "name": "slopguard",
+  "version": "0.1.0",
+  "description": "Offline-first scanner that detects AI-hallucinated and slopsquatted npm dependencies (supply-chain defense).",
+  "type": "module",
+  "bin": {
+    "slopguard": "dist/index.js"
+  },
+  "exports": {
+    ".": "./dist/scanner.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node --import tsx src/index.ts",
+    "scan": "node --import tsx src/index.ts",
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "keywords": [
+    "slopsquatting",
+    "supply-chain",
+    "security",
+    "npm",
+    "hallucination",
+    "ai",
+    "dependency-scanner"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.4.0"
+  }
+}

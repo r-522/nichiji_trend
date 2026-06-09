@@ -1,0 +1,22 @@
+{
+  "name": "demo-app-with-slopsquats",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A deliberately risky manifest used to demonstrate slopguard's detections.",
+  "scripts": {
+    "postinstall": "node ./scripts/setup.js"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "express": "^4.19.0",
+    "axios": "^1.6.0",
+    "react-codeshift": "^1.0.0",
+    "expres": "^4.0.0",
+    "loadsh": "^4.17.0",
+    "ai-vector-toolkit-fast": "^0.0.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "jest": "^29.0.0"
+  }
+}
