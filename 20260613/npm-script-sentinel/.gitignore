@@ -1,0 +1,6 @@
+# tool's own dev dependencies and build output
+/node_modules/
+/dist/
+
+# the demo fixture under examples/demo-project/node_modules IS committed:
+# it is hand-written test data, not installed packages

@@ -1,0 +1,31 @@
+{
+  "name": "npm-script-sentinel",
+  "version": "1.0.0",
+  "description": "Audit your dependency tree for npm v12 breaking changes: blocked install scripts, implicit node-gyp builds, and git/remote dependencies.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "bin": {
+    "npm-script-sentinel": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/cli.js",
+    "demo": "node dist/cli.js examples/demo-project",
+    "test": "node --test \"dist/test/*.test.js\""
+  },
+  "keywords": [
+    "npm",
+    "npm12",
+    "supply-chain",
+    "security",
+    "install-scripts",
+    "audit"
+  ],
+  "devDependencies": {
+    "@types/node": "^25.9.3",
+    "typescript": "^6.0.3"
+  }
+}
