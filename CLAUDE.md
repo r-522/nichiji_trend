@@ -20,5 +20,6 @@
 | 20260527 | mcp-toolbox-server | Python | Model Context Protocol (MCP) / JSON-RPC 2.0 over stdio |
 | 20260528 | mlkem-hybrid-vault | Go | ポスト量子暗号 (PQC) / ML-KEM-768 (FIPS 203) + X25519 ハイブリッド鍵交換 |
 | 20260530 | rust-subagent-swarm | Rust | パラレル・サブエージェント・オーケストレーション / Rust-native AI agent runtime (Antigravity / Rig / AutoAgents 系) |
+| 20260613 | npm-script-sentinel | TypeScript | npm v12 breaking changes（install scripts デフォルト無効化 / --allow-git, --allow-remote）/ ソフトウェアサプライチェーン・セキュリティ監査 |
 
-> **次回の言語選定メモ**: 直近（20260530）の使用言語は **Rust**。翌日は Rust 以外の言語を選定すること。
+> **次回の言語選定メモ**: 直近（20260613）の使用言語は **TypeScript**。翌日は TypeScript 以外の言語を選定すること。
